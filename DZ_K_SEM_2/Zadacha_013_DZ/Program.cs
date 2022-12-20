@@ -21,10 +21,9 @@ int GetRangeNumber(int start, int end)
 // функция нахождения третьей цифры в числе
 int ShowThirdDigit(int number)
 {
-    int index = 1;
-    while (number/index - 999 >= 0)
+    while (number - 999 >= 0)
     {
-        number = number/(index * 10); // в результате number должен стать трехзначным числом
+        number = number/ 10; // в результате number должен стать трехзначным числом
     }
     int digit3 = number % 10; // Выделяю третью цифру
  

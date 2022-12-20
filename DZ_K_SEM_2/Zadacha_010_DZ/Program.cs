@@ -26,4 +26,4 @@ int ShowSecondDigit(int number)
 }
 int rangeNumber = GetRangeNumber(100,999);
 int secondDigit = ShowSecondDigit(rangeNumber);
-Console.WriteLine($"Цифра {secondDigit} является второй цифрой числа {rangeNumber}");
+Console.WriteLine($"Цифра {secondDigit} является второй цифрой числа {rangeNumber}");new 
