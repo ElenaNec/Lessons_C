@@ -39,7 +39,7 @@ int QuantityDigit(int number)
 int quantityDigit = QuantityDigit(number);
 // Console.Write($" {quantityDigit}"); - выводит на консоль сколько в числе цифр
 
-// функция нахождения симметрии в числе (является ли число полиндромом)
+// функция нахождения симметрии в числе (является ли число палиндромом)
 int Polindrom(int number, int quantityDigit)
 {
     int count = quantityDigit / 2;  // делим число по-полам чтобы узнать кол-во сравнений
@@ -49,7 +49,7 @@ int Polindrom(int number, int quantityDigit)
         int numberEnd = 0;
         int numberNext = 0;
         int numberEndNext = 0;
-        
+
     for (int i=0; i < count; i++)
     {    
         number1 = number / ((int)Math.Pow(10,quantityDigit-(i+1)));

@@ -26,6 +26,6 @@ int x2 = GetUserValue("Веедите x2: ");
 int y2 = GetUserValue("Веедите y2: ");
 int z2 = GetUserValue("Веедите z2: ");
 
-double sqrt = Math.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)+(z2-z1)*(z2-z1)); // вычисляет квадратный корень из выражения (расстояние между точками
+double sqrt = Math.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)+(z2-z1)*(z2-z1)); // вычисляет квадратный корень из выражения (расстояние между точками)
 double sqrt1 = Math.Round(sqrt,2); // отделяет 2 символа после запятой
 Console.WriteLine($"Расстояние = {sqrt1}");
