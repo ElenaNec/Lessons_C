@@ -6,16 +6,16 @@
 
 Console.Clear();
 
-int getUserData(string message)
+int getUserDatа(string message)
 {
 Console.ForegroundColor = ConsoleColor.DarkCyan;
-Console.WriteLine(message);
+Console.Write(message);
 Console.ResetColor();
 int userData = int.Parse(Console.ReadLine()!);
 return userData;
 }
 
-int GetExtOfRange (int start, int end);
+int getExtOfRange (int start, int end)
 {
 int ext = 1;
     for (int i = start; i<=end;i++)
@@ -24,6 +24,7 @@ int ext = 1;
     }
     return ext;
 }
-int end = getUserDate("Enter A");
+int end = getUserDatа("Введите число: ");
 int ext = getExtOfRange(1,end);
+Console.Write($"Произведение всех чисел от 1 до {end} = ");
 Console.WriteLine(ext);
