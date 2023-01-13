@@ -1,5 +1,7 @@
-﻿// Задача 24
+﻿/*Задача 24 Напишите программу, которая принимает на вход число А 
+и выдает сумму чисел от 1 до А */
 
+Console.Clear();
 
 int getUserData(string message)
 {
@@ -20,12 +22,14 @@ int getSumOfRange(int start, int end)
     return sum;
 }
 
-void showData(string messageStart, int data, string messageEnd)
+void showData(string messageStart, int data)
 {
-    Console.WriteLine(messageStart);
+    Console.Write(messageStart);
     Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.Write(data);
     Console.ResetColor();
 }
-int end = getUserData(В число А для получения суммы);
+
+int end = getUserData("Введите число А для получения суммы : ");
 int sum = getSumOfRange(1,end);
+showData($"Сумма чисел от 1 до {end} = ", sum);
