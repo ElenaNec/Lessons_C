@@ -47,11 +47,6 @@ int CountEvenNumber(int[] array)
         {
             count++;
         }
-        /*else
-        {
-            countNegative = 0;
-        }
-        count = countPositive + countNegative;*/
     }
     return count;
 }
